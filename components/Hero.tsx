@@ -88,7 +88,7 @@ export default function Hero() {
             {/* CTAs */}
             <motion.div {...fadeUp(0.4)} style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 36 }}>
               <button
-                onClick={() => alert("CV en cours de préparation. Email : christ.mouhi24@inphb.ci")}
+                onClick={() => window.open("/CV MOUHI CHRIST-EMMANUEL ANA R_C.pdf")}
                 style={{
                   display: "flex", alignItems: "center", gap: 8,
                   padding: "13px 28px", borderRadius: 14,
@@ -140,7 +140,7 @@ export default function Hero() {
               {[
                 { href: "https://github.com", icon: <GithubIcon size={18} />, label: "GitHub" },
                 { href: "https://linkedin.com", icon: <LinkedinIcon size={18} />, label: "LinkedIn" },
-                { href: "mailto:christ.mouhi24@inphb.ci", icon: <MailIcon size={18} />, label: "Email" },
+                { href: "mailto:christmouhi@gmail.com", icon: <MailIcon size={18} />, label: "Email" },
               ].map(s => (
                 <a
                   key={s.label} href={s.href} target="_blank" rel="noopener"
@@ -192,14 +192,11 @@ export default function Hero() {
                   alignItems: "center", justifyContent: "center",
                   overflow: "hidden",
                 }}>
-                  <div id="avatar-container" style={{
-                    display: "flex", flexDirection: "column",
-                    alignItems: "center", justifyContent: "center",
-                    gap: 8, color: "#6B7280", fontSize: "0.8rem",
-                  }}>
-                    <div style={{ fontSize: "3.5rem" }}>👤</div>
-                    <div style={{ fontWeight: 600, color: "#EA580C" }}>Photo à ajouter</div>
-                  </div>
+                  <img
+                    src="/LKDN-removebg-preview.png"
+                    alt="Christ-Emmanuel Mouhi"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }}
+                  />
                 </div>
               </div>
 
