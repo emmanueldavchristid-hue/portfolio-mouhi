@@ -14,10 +14,10 @@ function FadeUp({ children, delay = 0, style }: { children: React.ReactNode; del
 }
 
 const cards = [
-  { icon: "🎓", title: "Formation", text: "Master Data Science Big Data & IA — INPHB / ENSEA / École Polytechnique France (2025–2026). Licence SIGL — ESATIC (2023–2024)." },
-  { icon: "🏦", title: "Focus Secteur", text: "Banque & Finance : credit scoring, analyse comportementale, pricing du risque. Expériences à la Société Générale CI et à la SIB." },
+  { icon: "🎓", title: "Formation", text: "Master Data Science Big Data & IA — INPHB / ENSEA / École Polytechnique France (2024 - 2026). Licence SIGL — ESATIC (2022 - 2024). Baccalauréat SERIES C — LYCEE CLASSIQUE D’ABIDJAN (2019 - 2021)" },
+  { icon: "🏦", title: "Focus Secteur", text: "Cabinet, Banque & Finance : credit scoring, analyse comportementale, pricing du risque. Expériences à la Société Générale CI et à la SIB." },
   { icon: "🌍", title: "Vision", text: "Utiliser l'IA pour créer des solutions accessibles et impactantes pour l'Afrique — de l'inclusion financière à la santé connectée." },
-  { icon: "⚡", title: "En ce moment", text: "Stagiaire Data Science & IA — Société Générale CI. Développement d'un assistant IA multimodal et d'un outil de tarification dynamique." },
+  { icon: "⚡", title: "En ce moment", text: "Stagiaire Data Science & IA — Société Générale CI. Développement d'un assistant IA multimodal, d'un outil de tarification dynamique,d'un système de scoring comportemental,ect..." },
 ];
 
 const tags = ["Machine Learning", "Credit Risk", "IA Générative", "ETL & Pipelines", "Python", "SQL", "Power BI", "Abidjan, CI"];
@@ -45,7 +45,7 @@ export default function About() {
                 <>Je suis <strong style={{ color: "#111827" }}>Christ-Emmanuel Mouhi</strong>, Data Scientist et AI Engineer en formation Master à l'INPHB (en partenariat avec l'École Polytechnique de France et l'ENSEA), spécialisé dans le risque de crédit, la modélisation prédictive et l'intelligence artificielle appliquée.</>,
                 <>Mon quotidien : concevoir des pipelines qui traitent des <strong style={{ color: "#111827" }}>millions d'observations</strong>, entraîner des modèles de scoring comportemental, et développer des outils IA qui aident les banques à prendre de meilleures décisions.</>,
                 <>Au-delà du code, je m'intéresse à la <strong style={{ color: "#111827" }}>façon dont l'IA peut réduire les inégalités d'accès</strong> — au crédit, à la santé, à l'emploi — dans le contexte africain. C'est ce qui nourrit des projets comme <em>Santé+360</em> et <em>Emploi+360</em>.</>,
-                <>Actuellement en stage à la <strong style={{ color: "#111827" }}>Société Générale Côte d'Ivoire</strong>, je cherche à rejoindre une équipe Data ambitieuse pour construire des systèmes intelligents à fort impact.</>,
+                <>Actuellement à la <strong style={{ color: "#111827" }}>Société Générale Côte d'Ivoire</strong>, je cherche à rejoindre une équipe Data ambitieuse pour construire des systèmes intelligents à fort impact.</>,
               ].map((p, i) => (
                 <p key={i} style={{ fontSize: "0.97rem", color: "#4B5563", lineHeight: 1.85 }}>{p}</p>
               ))}

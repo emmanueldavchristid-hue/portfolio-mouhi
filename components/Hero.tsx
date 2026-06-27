@@ -75,7 +75,7 @@ export default function Hero() {
                 fontSize: "1rem", fontWeight: 600, color: "#2563EB",
                 letterSpacing: "0.02em",
               }}>
-                AI Engineer &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; Data Engineer
+                 Data Scientist &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; AI & Data Engineer &nbsp;·&nbsp;
               </span>
             </motion.div>
 
@@ -139,7 +139,7 @@ export default function Hero() {
             <motion.div {...fadeUp(0.45)} style={{ display: "flex", gap: 12 }}>
               {[
                 { href: "https://github.com", icon: <GithubIcon size={18} />, label: "GitHub" },
-                { href: "https://linkedin.com", icon: <LinkedinIcon size={18} />, label: "LinkedIn" },
+                { href: "https://www.linkedin.com/in/christ-emmanuel-mouhi-4328212b1", icon: <LinkedinIcon size={18} />, label: "LinkedIn" },
                 { href: "mailto:christmouhi@gmail.com", icon: <MailIcon size={18} />, label: "Email" },
               ].map(s => (
                 <a

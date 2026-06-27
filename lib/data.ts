@@ -8,11 +8,13 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: 8, suffix: "", label: "Projets réalisés" },
+  { value: 9, suffix: "", label: "Projets réalisés" },
   { value: 4, suffix: "", label: "Hackathons & Challenges" },
   { value: 25, suffix: "M+", label: "Lignes de données traitées" },
   { value: 20, suffix: "+", label: "Technologies maîtrisées" },
   { value: 2, suffix: "", label: "Expériences bancaires" },
+  { value: 1, suffix: "", label: "Expériences cabinet(présentiel)" },
+  { value: 1, suffix: "", label: "Expériences cabinet(distance)" },
 ];
 
 export const SKILLS = [
@@ -20,25 +22,25 @@ export const SKILLS = [
     icon: "🤖",
     title: "Data Science & ML",
     items: ["Machine Learning", "Deep Learning", "NLP", "Credit Scoring", "Analyse Prédictive", "Feature Engineering", "Model Validation", "Statistiques", "Classification"],
-    highlight: ["Machine Learning", "Credit Scoring", "Feature Engineering"],
+    highlight: ["Machine Learning", "Credit Scoring","NLP","Analyse Prédictive","Classification"],
   },
   {
     icon: "✨",
     title: "Intelligence Artificielle",
-    items: ["IA Générative", "LLM", "RAG", "Agents IA", "Prompt Engineering", "Chatbots", "Vision IA", "Multimodal"],
-    highlight: ["IA Générative", "LLM", "RAG"],
+    items: ["IA Générative", "LLM", "RAG", "Agents IA", "Prompt Engineering", "Chatbots", "Vision IA", "Multimodal","SQL Agent","Observabilité"],
+    highlight: ["IA Générative", "LLM", "RAG","Agents IA","Prompt Engineering",],
   },
   {
     icon: "⚙️",
     title: "Data Engineering",
-    items: ["ETL / Pipelines", "Data Warehousing", "Big Data", "Data Quality", "Automatisation", "Excel VBA"],
-    highlight: ["ETL / Pipelines", "Big Data"],
+    items: ["ETL / Pipelines", "Data Warehousing", "Big Data", "Data Quality", "Automatisation", "Excel VBA","DuckDB"],
+    highlight: ["ETL / Pipelines", "Big Data",],
   },
   {
     icon: "💻",
     title: "Programmation",
     items: ["Python", "SQL", "R", "JavaScript", "Node.js", "Bash"],
-    highlight: ["Python", "SQL"],
+    highlight: ["Python", "SQL","Node.js",],
   },
   {
     icon: "📊",
@@ -81,6 +83,35 @@ export const EXPERIENCES = [
       { bold: "Immersion bancaire", text: " — compréhension des processus opérationnels d'une grande banque ivoirienne." },
     ],
     tags: ["Excel VBA", "Automatisation", "Reporting", "RH"],
+  },
+    {
+    period: "Avril - Septembre 2024",
+    company: "Terebei - Syabe",
+    role: "Stagiaire Developpeur Full stack",
+    location: "Abidjan, CI",
+    current: false,
+    points: [
+      { bold: "Developpement Backend", text: " — Mise en place de multi API pour l'alimentation d'application de gestion" },
+      { bold: "Developpement Frontend", text: " — Création d'interface moderne pour pilotage de plusieurs applications" },
+      { bold: "Administration BD", text: " — Création et gestion de base de données relationnelle" },
+    ],
+    tags: ["Node JS", "ExpressJS", "PostreSQL", "Angular", "Swagger"],
+  },
+  {
+    period: "Mars - Septembre 2024",
+    company: "ProActive SWISS - GROwing Consulting",
+    role: "Formation Soft Skills en millieu professionnel et Techniques de Developpement Full stack",
+    location: "Abidjan, CI (à distance)",
+    current: false,
+    points: [
+      { bold: "Techniques de communication"},
+      { bold: "Personnal Branding"},
+      { bold: "Leadership"},
+      { bold: "Collaboration interne"},
+      { bold: "Les Microservices"},
+      { bold: "L'architecture logicielle REST et les Web API's"},
+    ],
+    tags: [],
   },
 ];
 
@@ -198,6 +229,23 @@ export const PROJECTS = [
     statusColor: "#6B7280",
     github: "#",
     demo: null,
+  },
+  {
+    id: 9,
+    cat: "ia" as ProjectCategory,
+    emoji: "🗳️",
+    category: "Agentic AI · Data Engineering",
+    title: "Multi-Agent Election Intelligence Platform",
+    desc: "Plateforme multi-agents pour interroger les résultats officiels des élections législatives ivoiriennes en langage naturel. SQL Agent + Hybrid RAG + LLM — 205 circonscriptions, 1 400+ candidats indexés, détection automatique d'anomalies.",
+    metrics: [
+      { val: "205+", lbl: "Circonscriptions" },
+      { val: "1 400+", lbl: "Candidats indexés" },
+    ],
+    tags: ["LangChain", "DuckDB", "RAG", "SQL Agent", "Python", "Streamlit"],
+    status: "Terminé",
+    statusColor: "#6B7280",
+    github: "#",
+    demo: "#",
   },
 ];
 

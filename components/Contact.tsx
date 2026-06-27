@@ -15,11 +15,11 @@ export default function Contact() {
   };
 
   const contactItems = [
-    { icon: <MailIcon size={18} />, label: "Email", value: "christ.mouhi24@inphb.ci", href: "mailto:christ.mouhi24@inphb.ci" },
+    { icon: <MailIcon size={18} />, label: "Email", value: "christmouhi@gmail.com", href: "mailto:christmouhi@gmail.com" },
     { icon: <PhoneIcon size={18} />, label: "Téléphone", value: "+225 07 06 71 29 80", href: "tel:+2250706712980" },
     { icon: <MapPinIcon size={18} />, label: "Localisation", value: "Abidjan, Yopougon — Côte d'Ivoire", href: null },
-    { icon: <LinkedinIcon size={18} />, label: "LinkedIn", value: "Christ-Emmanuel Mouhi", href: "https://linkedin.com" },
-    { icon: <GithubIcon size={18} />, label: "GitHub", value: "github.com/cemouhi", href: "https://github.com" },
+    { icon: <LinkedinIcon size={18} />, label: "LinkedIn", value: "Christ-Emmanuel Mouhi", href: "https://www.linkedin.com/in/christ-emmanuel-mouhi-4328212b1" },
+    { icon: <GithubIcon size={18} />, label: "GitHub", value: "github.com/", href: "https://github.com" },
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function Contact() {
           <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.5, delay: 0.1 }}>
             <h3 style={{ fontWeight: 700, fontSize: "1.3rem", color: "#111827", marginBottom: 12 }}>Ouvert aux opportunités</h3>
             <p style={{ color: "#4B5563", fontSize: "0.95rem", lineHeight: 1.75, marginBottom: 28 }}>
-              Stage, CDI, freelance, collaboration sur projets IA/Data — si vous avez un défi data intéressant, je suis à l'écoute. Basé à Abidjan, disponible en présentiel ou à distance.
+              CDI, CDD, freelance, collaboration sur projets IA/Data — si vous avez un défi data intéressant, je suis à l'écoute. Basé à Abidjan, disponible en présentiel ou à distance.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {contactItems.map(item => (
@@ -81,8 +81,8 @@ export default function Contact() {
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }} className="form-row">
                 {[
-                  { label: "Prénom & Nom", placeholder: "Jean Dupont", type: "text" },
-                  { label: "Email", placeholder: "jean@exemple.com", type: "email" },
+                  { label: "Prénom & Nom", placeholder: "Christ-Emmanuel MOUHI", type: "text" },
+                  { label: "Email", placeholder: "christmouhi@exemple.com", type: "email" },
                 ].map(f => (
                   <div key={f.label}>
                     <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 600, color: "#4B5563", marginBottom: 8 }}>{f.label}</label>
@@ -116,7 +116,7 @@ export default function Contact() {
                   onBlur={e => { e.target.style.borderColor = "#E5E7EB"; e.target.style.boxShadow = "none"; }}
                 >
                   <option value="">Sélectionner un objet...</option>
-                  <option>Opportunité de stage / emploi</option>
+                  <option>Opportunité d'emploi</option>
                   <option>Collaboration sur projet Data/IA</option>
                   <option>Mission freelance</option>
                   <option>Question générale</option>

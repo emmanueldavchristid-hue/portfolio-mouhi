@@ -80,7 +80,7 @@ export default function Navbar() {
             }}
             onMouseEnter={e => { e.currentTarget.style.background = "#C2410C"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={e => { e.currentTarget.style.background = "#EA580C"; e.currentTarget.style.transform = "translateY(0)"; }}
-            onClick={() => alert("CV en cours de préparation. Contactez-moi : christ.mouhi24@inphb.ci")}
+            onClick={() => window.open("/CV MOUHI CHRIST-EMMANUEL ANA R_C.pdf")}
           >
             ↓ CV
           </button>

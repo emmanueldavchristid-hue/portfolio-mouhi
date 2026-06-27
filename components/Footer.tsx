@@ -20,8 +20,8 @@ export default function Footer() {
             <div style={{ display: "flex", gap: 10 }}>
               {[
                 { href: "https://github.com", icon: <GithubIcon size={16} /> },
-                { href: "https://linkedin.com", icon: <LinkedinIcon size={16} /> },
-                { href: "mailto:christ.mouhi24@inphb.ci", icon: <MailIcon size={16} /> },
+                { href: "https://www.linkedin.com/in/christ-emmanuel-mouhi-4328212b1", icon: <LinkedinIcon size={16} /> },
+                { href: "mailto:christmouhi@gmail.com", icon: <MailIcon size={16} /> },
               ].map((s, i) => (
                 <a key={i} href={s.href} target="_blank" rel="noopener"
                   style={{
@@ -70,7 +70,7 @@ export default function Footer() {
             <h4 style={{ fontSize: "0.75rem", fontWeight: 700, color: "#9CA3AF", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 16 }}>Contact</h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
               {[
-                { label: "christ.mouhi24@inphb.ci", href: "mailto:christ.mouhi24@inphb.ci" },
+                { label: "christ.mouhi24@inphb.ci", href: "mailto:christmouhi@gmail.com" },
                 { label: "+225 07 06 71 29 80", href: "tel:+2250706712980" },
                 { label: "GitHub", href: "https://github.com" },
                 { label: "LinkedIn", href: "https://linkedin.com" },
