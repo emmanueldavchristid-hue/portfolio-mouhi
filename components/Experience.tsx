@@ -75,7 +75,7 @@ export default function Experience() {
                   {exp.points.map((pt, j) => (
                     <li key={j} style={{ display: "flex", gap: 10, fontSize: "0.9rem", color: "#4B5563", lineHeight: 1.65 }}>
                       <span style={{ color: "#EA580C", fontWeight: 700, flexShrink: 0, marginTop: 1 }}>→</span>
-                      <span><strong style={{ color: "#111827" }}>{pt.bold}</strong>{pt.text}</span>
+                      <span><strong style={{ color: "#111827" }}>{pt.bold}</strong>{"text" in pt ? pt.text : ""}</span>
                     </li>
                   ))}
                 </ul>
